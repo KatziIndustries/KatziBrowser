@@ -1,0 +1,1 @@
+uint32_t* render(uint32_t*,int,int);

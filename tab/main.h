@@ -1,0 +1,1 @@
+uint32_t* tab(uint32_t*,int,int,const char*);
