@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <cstring>
+#include "../brand/var.h"
 
 static bool running = true;
 static int width = 800;
