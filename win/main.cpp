@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <cstring>
+#include <string>
 #include "../brand/var.h"
 
 static bool running = true;
@@ -170,12 +171,14 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int)
     wc.hInstance = hInstance;
     wc.lpszClassName = "Katzi";
 
+    std::string title = std::string("Katzi - ") + KATZI_DEFAULT_URL;
+
     RegisterClassA(&wc);
 
     HWND hwnd = CreateWindowExA(
         0,
         wc.lpszClassName,
-        "Katzi",
+        title.c_str(),
         WS_OVERLAPPEDWINDOW | WS_VISIBLE,
         CW_USEDEFAULT,
         CW_USEDEFAULT,
