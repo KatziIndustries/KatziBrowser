@@ -1,3 +1,5 @@
+set -e
+
 mkdir -p build
 gcc win/tab.cpp tab/*.cpp -o build/tab.exe -mwindows -luser32 -lgdi32 -lws2_32 -lstdc++
 echo "[Katzi] Katzi-Tab Compiled"
