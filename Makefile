@@ -12,7 +12,7 @@ OBJS := $(SRCS:.c=.o)
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
-	$(CXX) $(OBJS) $(VKATZI_DIR)/$(VKATZI_O) -o $(TARGET)
+	$(CC) $(OBJS) -o $(TARGET)
 
 %.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+	$(CC) $(CCFLAGS) -c $< -o $@
