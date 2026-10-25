@@ -1,2 +1,4 @@
 build/
 ext/
+linux/bin/
+linux/obj/
