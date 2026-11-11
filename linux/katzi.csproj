@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="KatziDrip" Version="1.0.8" />
+    <PackageReference Include="KatziDrip" Version="1.1.1" />
     <PackageReference Include="Kurl" Version="0.1.0" />
     <PackageReference Include="SmashFramework" Version="2.1.4" />
   </ItemGroup>
